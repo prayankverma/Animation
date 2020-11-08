@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+ <style>
+     .container{
+        padding: 10px;
+        width:345px;
+        height:345px;
+        margin:150px; 
+      ;
+       
+        
+      
+       
+       }
+
+     .circle{
+        position: absolute;
+        height: 325px;
+        width: 325px;
+        border-radius:30%;
+        mix-blend-mode:lighten;}
+     
+
+   .red{ 
+        background-color: rgba(255, 0, 0);
+        
+      
+        animation-name: rotation;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+       
+        animation-timing-function: linear;
+       
+       }
+
+   .green{ 
+        background-color:  rgba(0, 255, 0);
+        margin-left: 20px;  
+        animation-name: rotation;
+        animation-duration:2s ;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+      
+       }
+
+   .blue{
+       background-color: rgba(0, 0, 255);
+       margin-top:14px;
+       margin-left:7px;  
+       animation-name: rotation; animation-iteration-count: infinite;
+       animation-timing-function: linear;
+        animation-duration:2s;}
+
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+  to {
+      transform: rotate(360deg);
+      
+      
+      }
+
+    
+}
+    
+ </style>
+</head>
+        <body>
+            <div class=" container loading">
+                <div class="circle red"></div>
+                <div class="circle green "></div>
+                <div class="circle blue loading"></div>
+            </div>     
+        </body>
+    
+</html>
